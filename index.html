@@ -122,7 +122,7 @@
                             <td>${contractData.user}</td>
                             <td>${contractData.use_case}</td>
                             <td>${getStatusBadge(contractData.contract_status || 'pending')}</td>
-                            <td>${new Date().toLocaleString()}</td>
+                            <td>${contractData.timestamp || 'N/A'}</td>
                             <td>
                                 <button class="btn btn-sm btn-outline-primary" 
                                         onclick="viewDetails('${contractData.user}', '${contractData.use_case}')">
